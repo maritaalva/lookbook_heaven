@@ -1,0 +1,242 @@
+
+@font-face {
+  font-family: 'favorit';
+  src: url('../fonts/ABCFavoritExpanded-Medium-Trial.woff2') format('woff2'),
+      url('../fonts/ABCFavoritExpanded-Medium-Trial.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+header{
+  margin-top: 1.563rem;
+}
+header nav ul {
+	display: flex;
+  flex-direction: row;
+  margin: 0;
+	padding: 0 0.078rem;
+	list-style-type: none;
+  justify-content: space-between;
+  cursor: pointer;
+  }
+
+#descriptionlogo{
+  transition: all 0.2s ease-out;
+  color: rgb(0, 0, 0);
+  top:3.125rem;
+  opacity: 0 ;
+  font-family: 'favorit';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: initial;
+    text-align: center;
+}
+
+/* #logopage:hover .description{
+  opacity: 100;
+} */
+
+#clouddesc{
+ 
+  font-size: 9pt;
+  margin: 0.938;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+}
+  
+#imgclouddesc{
+
+  width: 55%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+#skytheme{
+  border-color: black;
+   height: 1.25rem;
+   width: 1.25rem;
+  border-radius: 100%;
+  background-color: DodgerBlue;
+  margin-right: 1rem;
+}
+#whitetheme{
+  border-color: black;
+  height: 1.25rem;
+  width: 1.25rem;
+ border-radius: 100%;
+ background-color: Gainsboro;
+ margin-right: 1rem;
+}
+#blacktheme{
+  border-color: black;
+  height: 1.25rem;
+  width: 1.25rem;
+ border-radius: 100%;
+ background-color: black;
+ margin-right: 1rem;
+}
+
+video {
+  display: block;
+}
+#bkg_color{
+  background-color: white;
+}
+
+#bkg_sky{ 
+  
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+
+  position: fixed;    
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); 
+      
+  z-index: -1;
+    
+  background-size: cover;
+
+}
+
+#bkg_white{
+  background-color: white;
+}
+
+#bkg_black{
+  background-color: black;
+}
+
+#logopage {
+  width: 8rem;
+  margin-left: 20rem;
+}
+  #botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 20rem;
+    
+  }
+#caja {
+  height: 31.25rem;
+  width: auto;
+  display: block;
+  margin-top: 1.875rem;
+  margin: 0 auto;
+z-index: 3;
+}
+
+.mini {
+ height: 5.625rem;
+  margin: 0.188rem;
+  margin-left: 0.938rem;
+  margin-right: 0.938rem;
+}
+
+.caja_mini {
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem;
+}
+
+figure{
+  margin: 0;
+}
+
+.imgdesc{
+  font-size: 9pt;
+  margin: 0.938rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'favorit';
+  opacity: 0;
+}
+#imgdesc1{
+  color: aqua;
+}
+#imgdesc2{
+  color: DodgerBlue;
+}
+button{
+  position: absolute;
+  top: 40%;
+  background-color: transparent;
+  border: none;
+}
+#previzqu{
+  margin-right: 50%;
+  margin-left: 15rem;
+}
+#nextderecha{
+  margin-left: 80%;
+  margin-right: 15rem;
+}
+svg{
+  color: DodgerBlue;
+}
+@media  screen and (min-width: 600px){
+  
+  #logopage {
+    margin-left: 18rem;
+  }
+  #botones{
+    margin-right: 18rem;
+  }
+
+}
+@media only screen and (max-width: 900px){
+ 
+#logopage {
+  width: 5rem;
+  margin-left: 2rem;
+}
+#botones{
+  margin-right: 2rem;
+}
+#skytheme{
+  height: 1rem;
+  width: 1rem;
+}
+#whitetheme{
+  height: 1rem;
+  width: 1rem;
+}
+#blacktheme{
+  height: 1rem;
+  width: 1rem;
+}
+ .caja_mini{
+   flex-wrap: wrap;
+ }
+ .mini{
+   height: 3.95rem;
+ }
+ #caja{
+  height: 20rem;
+}
+button{
+  top: 30%;
+}
+#previzqu{
+  margin-left: 2rem;
+}
+#clouddesc{
+  top: 35%;
+  font-size:6.2pt;
+}
+#imgclouddesc {
+  top: 35%;
+  width: 125%;
+}
+}
